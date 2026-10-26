@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AI Enterprise Security Trainer – Overview</title>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<header class="topbar"><strong>AI Enterprise Security Trainer</strong><span>Student: User</span></header>
+<div class="lab">SIMULATED AI Security Lab | US Bank | Financial</div>
+
+<main class="wrap">
+  <ol class="steps" id="steps"></ol>
+
+  <h1>Choose your AI security training scenario</h1>
+  <p class="sub">Pick a scenario, then configure the agent that handles it.</p>
+
+  <div class="grid2">
+    <div class="card">
+      <h2>Your training environment</h2>
+      <p>US Bank has a lending service. One AI agent reviews loan documents and uses structured data for underwriting.</p>
+      <p><strong>Your role: junior security analyst</strong></p>
+      <p>You will configure the AI agent, run two scenarios, review evidence, and choose responses based on your security knowledge.</p>
+    </div>
+    <div class="card">
+      <h2>How the lab works</h2>
+      <ol>
+        <li>Configure the Loan Review Agent with three controls: data access, permissions, and human approval.</li>
+        <li>Run one of two scenarios and inspect the activity log.</li>
+        <li>Review the evidence and choose one of three responses: pause, restrict, or continue with just alerts.</li>
+      </ol>
+    </div>
+  </div>
+
+  <div class="rowhead"><h2>Scenarios</h2><span class="tag">Industry: Financial</span></div>
+  <div class="grid2" role="radiogroup" aria-label="Scenarios" id="scenarios"></div>
+
+  <div class="card" style="margin-top:24px">
+    <h2>Training progress</h2>
+    <div style="overflow-x:auto">
+      <table>
+        <thead><tr><th>Scenario</th><th>Status</th><th>Security feedback</th><th>Productivity feedback</th></tr></thead>
+        <tbody id="progress"></tbody>
+      </table>
+    </div>
+  </div>
+</main>
+
+<footer class="footer">
+  <span></span>
+  <div class="grp"><a class="btn primary" href="setup.html">Configure agent →</a></div>
+</footer>
+<div class="toast hidden" id="toast" role="status"></div>
+
+<script src="js/common.js"></script>
+<script src="js/index.js"></script>
+</body>
+</html>

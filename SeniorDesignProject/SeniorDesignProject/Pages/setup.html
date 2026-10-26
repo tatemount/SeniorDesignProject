@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AI Enterprise Security Trainer – Agent setup</title>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<header class="topbar"><strong>AI Enterprise Security Trainer</strong><span>Student: Jake</span></header>
+<div class="lab">SIMULATED AI Security Lab | US Bank | Financial</div>
+
+<main class="wrap">
+  <ol class="steps" id="steps"></ol>
+
+  <h1>Configure AI Agent</h1>
+  <p class="sub">Choose an option for data access, permissions, and human approval.</p>
+  <div class="notice" id="setup-banner"></div>
+
+  <div class="setup">
+    <div class="side">
+      <div class="card">
+        <h2>Lab context</h2>
+        <p style="margin:0">Employee: Bob Ross<br>Role: loan officer<br>Account: bob.ross</p>
+        <p style="margin:12px 0 4px">Resources</p>
+        <ul>
+          <li>Loan Portal application</li>
+          <li>Customer DB</li>
+          <li>Loan document storage</li>
+          <li>Internal export gateway</li>
+        </ul>
+        <p class="goal">Goal: allow appropriate access with security in mind.</p>
+      </div>
+      <div class="card">
+        <h2>Fixed defaults</h2>
+        <ul style="color:var(--muted)">
+          <li>Applications: Loan Portal and doc storage</li>
+          <li>Tools: read document, query DB, create CSV, and export file</li>
+          <li>Credentials: preset service account</li>
+          <li>Isolation: separate container for the agent</li>
+          <li>Logging and alerts: enabled for prompts, tool calls, and data access</li>
+        </ul>
+      </div>
+    </div>
+
+    <div>
+      <div class="card">
+        <h2>Loan Review Agent configuration</h2>
+        <div class="ctrl" data-key="data">
+          <span class="lbl">Data access</span>
+          <div class="seg" role="radiogroup" aria-label="Data access"></div>
+          <div class="hint">Assigned loan records only, or all customer records.</div>
+        </div>
+        <div class="ctrl" data-key="perm">
+          <span class="lbl">Permissions</span>
+          <div class="seg" role="radiogroup" aria-label="Permissions"></div>
+          <div class="hint">Read only, or read and export. No write access.</div>
+        </div>
+        <div class="ctrl" data-key="approval" style="margin-bottom:0">
+          <span class="lbl">Human approval</span>
+          <div class="seg" role="radiogroup" aria-label="Human approval"></div>
+          <div class="hint">Require approval for exports, or allow exports without approval.</div>
+        </div>
+      </div>
+      <div class="summary" id="summary" aria-live="polite"></div>
+    </div>
+  </div>
+</main>
+
+<footer class="footer">
+  <a class="btn" href="index.html">← Scenario selection</a>
+  <div class="grp">
+    <button id="save" disabled>Save configuration</button>
+    <button class="primary" id="start" disabled>Start simulation →</button>
+  </div>
+</footer>
+<div class="toast hidden" id="toast" role="status"></div>
+
+<script src="js/common.js"></script>
+<script src="js/setup.js"></script>
+</body>
+</html>
