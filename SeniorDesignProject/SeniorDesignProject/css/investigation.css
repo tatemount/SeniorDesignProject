@@ -1,0 +1,16 @@
+/* Page 4: Investigation */
+.box{background:var(--band);border:1px solid var(--line);border-radius:3px;padding:14px 16px;margin-top:14px}
+.box h3{font-size:15px;font-weight:600;margin:0 0 8px}
+.box p{margin:0 0 10px}
+.box ul{margin:0;padding-left:18px}
+details.box summary{font-weight:600;cursor:pointer}
+details.box summary:focus-visible{outline:3px solid var(--accent);outline-offset:2px}
+details.box[open] summary{margin-bottom:10px}
+.note{font-size:13px;color:var(--muted)}
+pre{margin:0;padding:12px;background:var(--surface);border:1px solid var(--line);border-radius:3px;font:13px/1.5 ui-monospace,Consolas,Menlo,monospace;white-space:pre-wrap;overflow-x:auto}
+.causes{display:grid;gap:10px}
+.feedback{margin-top:14px;padding:12px 14px;background:var(--surface);border:1px solid var(--line);border-left:4px solid var(--accent);border-radius:3px;font-size:14px}
+.feedback.bad{border-left-color:var(--ink)}
+.feedback strong{display:block;margin-bottom:2px}
+td:first-child{white-space:nowrap;font-weight:600}
+td:nth-child(2){white-space:nowrap}

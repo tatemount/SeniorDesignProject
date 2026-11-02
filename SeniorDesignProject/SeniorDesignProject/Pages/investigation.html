@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AI Enterprise Security Trainer – Investigation</title>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../css/styles.css">
+<link rel="stylesheet" href="../css/investigation.css">
+</head>
+<body>
+<header class="topbar"><strong>AI Enterprise Security Trainer</strong><span>Student: Jake</span></header>
+<div class="lab">SIMULATED AI Security Lab | US Bank | Financial</div>
+
+<main class="wrap">
+  <ol class="steps" id="steps"></ol>
+
+  <h1 id="page-title">Investigate</h1>
+  <p class="sub" id="page-sub"></p>
+
+  <div class="notice hidden" id="no-incident">
+    There is no incident to investigate yet. <a href="setup.html">Configure the agent</a> and run the simulation first.
+  </div>
+
+  <div class="card" id="evidence">
+    <h2>Incident evidence</h2>
+
+    <div style="overflow-x:auto">
+      <table>
+        <thead><tr><th>Time</th><th>Event</th><th>Observed activity</th></tr></thead>
+        <tbody id="events"></tbody>
+      </table>
+    </div>
+
+    <details class="box" id="source">
+      <summary>Source document text</summary>
+      <p class="note" id="source-note"></p>
+      <pre id="source-text"></pre>
+    </details>
+
+    <div class="box">
+      <h3>Agent settings</h3>
+      <ul id="settings"></ul>
+    </div>
+
+    <div class="box">
+      <h3>Likely cause</h3>
+      <p>Select the cause supported by the evidence:</p>
+      <div class="causes" id="causes" role="radiogroup" aria-label="Likely cause"></div>
+      <div class="feedback hidden" id="feedback" aria-live="polite"></div>
+    </div>
+  </div>
+</main>
+
+<footer class="footer">
+  <a class="btn" href="simulation.html">← Simulation workspace</a>
+  <div class="grp"><button class="primary" id="next" disabled>Choose response →</button></div>
+</footer>
+<div class="toast hidden" id="toast" role="status"></div>
+
+<script src="../js/common.js"></script>
+<script src="../js/Pages/investigation.js"></script>
+</body>
+</html>
