@@ -1,0 +1,17 @@
+/* Page 5: Response */
+.options{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-bottom:24px}
+.resp{display:block;cursor:pointer;position:relative}
+.resp input{position:absolute;opacity:0}
+.resp .card{height:100%;transition:background .15s,border-color .15s}
+.resp input:checked + .card{background:var(--sel);border:2px solid var(--accent)}
+.resp input:focus-visible + .card{outline:3px solid var(--accent);outline-offset:2px}
+.resp h3{font-size:17px;font-weight:600;margin:0 0 8px}
+.est{font-weight:600;font-size:14px;margin:14px 0 2px}
+.estdetail{font-size:14px;color:var(--muted);margin:0}
+.lbl{display:block;font-weight:600;margin-bottom:8px}
+textarea{width:100%;min-height:150px;padding:10px 12px;font:inherit;font-size:14px;color:var(--ink);background:var(--surface);border:1px solid var(--line);border-radius:3px;resize:vertical}
+textarea:focus-visible{outline:3px solid var(--accent);outline-offset:2px}
+td.hint-row{color:var(--muted)}
+@media (max-width:820px){
+  .options{grid-template-columns:1fr}
+}
