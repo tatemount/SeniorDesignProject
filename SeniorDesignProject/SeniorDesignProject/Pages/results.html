@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AI Enterprise Security Trainer – Results</title>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../css/styles.css">
+<link rel="stylesheet" href="../css/results.css">
+</head>
+<body>
+<header class="topbar"><strong>AI Enterprise Security Trainer</strong><span>Student: Jake</span></header>
+<div class="lab">SIMULATED AI Security Lab | US Bank | Financial</div>
+
+<main class="wrap">
+  <ol class="steps" id="steps"></ol>
+
+  <h1>Results and Lessons Learned</h1>
+  <p class="sub" id="page-sub"></p>
+
+  <div class="notice hidden" id="blocked"></div>
+
+  <div id="content">
+    <div class="notice" id="banner"></div>
+
+    <div class="outcomes" id="outcomes"></div>
+
+    <div class="results-grid">
+      <div class="card" id="what-happened">
+        <h2>What happened and why</h2>
+      </div>
+      <div class="card">
+        <h2>Learning takeaways</h2>
+        <ul id="takeaways"></ul>
+      </div>
+    </div>
+
+    <div class="notice" id="saved" style="margin-top:16px"></div>
+  </div>
+</main>
+
+<footer class="footer">
+  <a class="btn" href="investigation.html">Review this run</a>
+  <div class="grp">
+    <button id="retry">Retry with new setup</button>
+    <button class="primary" id="return">Return to scenario selection →</button>
+  </div>
+</footer>
+<div class="toast hidden" id="toast" role="status"></div>
+
+<script src="../js/common.js"></script>
+<script src="../js/Pages/results.js"></script>
+</body>
+</html>
