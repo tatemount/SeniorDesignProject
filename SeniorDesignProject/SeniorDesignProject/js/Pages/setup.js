@@ -44,9 +44,7 @@ $("#save").onclick = ()=>{
 $("#start").onclick = ()=>{
   state.progress[state.scenario].status = "In progress";
   saveState(state);
-  renderSummary(true);
-  // When page 3 exists, replace the toast with: location.href = "simulation.html";
-  toast("Simulation page is the next screen to build");
+  location.href = "simulation.html";
 };
 
 $("#setup-banner").textContent =

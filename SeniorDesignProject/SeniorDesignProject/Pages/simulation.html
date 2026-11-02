@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AI Enterprise Security Trainer – Simulation</title>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../css/styles.css">
+<link rel="stylesheet" href="../css/simulation.css">
+</head>
+<body>
+<header class="topbar"><strong>AI Enterprise Security Trainer</strong><span>Student: Jake</span></header>
+<div class="lab">SIMULATED AI Security Lab | US Bank | Financial</div>
+
+<main class="wrap">
+  <ol class="steps" id="steps"></ol>
+
+  <h1>Workspace</h1>
+  <p class="sub" id="scenario-name"></p>
+
+  <div class="notice hidden" id="no-config">
+    The agent has not been configured yet. <a href="setup.html">Go to Agent setup</a> and choose all three controls first.
+  </div>
+
+  <div id="workspace">
+    <div class="notice" id="banner"></div>
+
+    <div class="sim">
+      <div class="card">
+        <h2>Scenario status</h2>
+        <div class="chips" id="status-chips"></div>
+
+        <div class="subcard">
+          <h3>Loan Review Agent</h3>
+          <p id="agent-text"></p>
+          <div class="chips" id="config-chips"></div>
+        </div>
+
+        <div class="subcard" style="margin-bottom:0">
+          <h3>Activity log</h3>
+          <ol class="log" id="log" aria-live="polite"></ol>
+        </div>
+      </div>
+
+      <div class="card">
+        <h2>Incident queue</h2>
+        <div class="incident">
+          <h3 id="inc-title"></h3>
+          <dl id="inc-details"></dl>
+          <button id="open-evidence" disabled>Open incident evidence</button>
+        </div>
+        <p class="count" id="inc-count">1 open incident &nbsp; 0 resolved</p>
+        <h3>What to do next</h3>
+        <p>Investigate the log events and text, then use your security knowledge to deduce the likely cause.</p>
+      </div>
+    </div>
+  </div>
+</main>
+
+<footer class="footer">
+  <a class="btn" href="setup.html">View agent setup</a>
+  <div class="grp">
+    <button id="pause">Pause simulation</button>
+    <button class="primary" id="investigate" disabled>Investigate incident →</button>
+  </div>
+</footer>
+<div class="toast hidden" id="toast" role="status"></div>
+
+<script src="../js/common.js"></script>
+<script src="../js/Pages/simulation.js"></script>
+</body>
+</html>
